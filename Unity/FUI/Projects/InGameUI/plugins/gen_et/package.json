@@ -1,0 +1,15 @@
+{
+  "name": "gen_et",
+  "displayName": "gen_et",
+  "description": "",
+  "version": "",
+  "author": {
+    "name": "Administrator"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+   
+  },
+  "icon": "",
+  "main": "main.js"
+}

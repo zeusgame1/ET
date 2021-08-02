@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="800,600">
+  <displayList>
+    <image id="n0_gwhc" name="n0" src="gwhc2" fileName="Images/startgame/background/1.png" xy="0,0"/>
+    <image id="n2_gwhc" name="n2" src="gwhct" fileName="Images/Login/back/1.png" xy="257,217"/>
+    <component id="n1_gwhc" name="n1" src="gwhc1l" fileName="Components/LoginStartButton.xml" xy="437,397"/>
+    <text id="n5_gwhc" name="Account" xy="351,272" size="89,19" fontSize="12" color="#ffffff" autoSize="none" autoClearText="true" text="1234" input="true"/>
+    <text id="n6_gwhc" name="Password" xy="350,309" size="89,19" fontSize="12" color="#ffffff" autoSize="none" autoClearText="true" text="1234" input="true" password="true"/>
+  </displayList>
+</component>

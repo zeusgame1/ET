@@ -1,0 +1,120 @@
+/** This is an automatically generated class by FairyGUI plugin FGUI2ET. Please do not modify it. **/
+
+using FairyGUI;
+using FairyGUI.Utils;
+
+namespace (@Namespace)
+{
+	[ObjectSystem]
+    public class (@UIName)AwakeSystem : AwakeSystem<(@UIName), GObject>
+    {
+        public override void Awake((@UIName) self, GObject go)
+        {
+            self.Awake(go);
+        }
+    }
+	
+	public sealed class (@UIName) : FUI
+	{	
+		public const string UIPackageName = "(@PkgName)";
+		public const string UIResName = "(@ResName)";
+		
+		
+		public const string URL = "(@URL)";
+		/// <summary>
+        /// (@ResName)的组件类型(GComponent、GButton、GProcessBar等)，它们都是GObject的子类。
+        /// </summary>
+		public (@SELF) self;
+		
+		(@COMS)
+
+		private static GObject CreateGObject()
+        {
+            return UIPackage.CreateObject(UIPackageName, UIResName);
+        }
+		
+		private static void CreateGObjectAsync(UIPackage.CreateObjectCallback result)
+        {
+            UIPackage.CreateObjectAsync(UIPackageName, UIResName, result);
+        }
+
+        public static (@UIName) CreateInstance(Entity domain)
+		{			
+			return EntityFactory.Create<(@UIName), GObject>(domain, CreateGObject());
+		}
+
+        public static ETTask<(@UIName)> CreateInstanceAsync(Entity domain)
+        {
+            ETTask<(@UIName)> tcs = ETTask<(@UIName)>.Create();
+
+            CreateGObjectAsync((go) =>
+            {
+                tcs.SetResult(EntityFactory.Create<(@UIName), GObject>(domain, go));
+            });
+
+            return tcs;
+        }
+
+        public static (@UIName) Create(Entity domain, GObject go)
+		{
+			return EntityFactory.Create<(@UIName), GObject>(domain, go);
+		}
+		
+        /// <summary>
+        /// 通过此方法获取的FUI，在Dispose时不会释放GObject，需要自行管理（一般在配合FGUI的Pool机制时使用）。
+        /// </summary>
+        public static (@UIName) GetFormPool(Entity domain, GObject go)
+        {
+            var fui = go.Get<(@UIName)>();
+
+            if(fui == null)
+            {
+                fui = Create(domain, go);
+            }
+
+            fui.isFromFGUIPool = true;
+
+            return fui;
+        }
+						
+		public void Awake(GObject go)
+		{
+			if(go == null)
+			{
+				return;
+			}
+			
+			GObject = go;	
+			
+			if (string.IsNullOrWhiteSpace(Name))
+            {
+				Name = Id.ToString();
+            }
+			
+			self = ((@BASE))go;
+			
+			self.Add(this);
+			
+			var com = go.asCom;
+				
+			if(com != null)
+			{	
+				 (@INIT)
+			}
+		}
+		
+		public override void Dispose()
+		{
+			if(IsDisposed)
+			{
+				return;
+			}
+			
+			base.Dispose();
+			
+			self.Remove();
+			self = null;
+			(@Dispose)
+		}
+	}
+}

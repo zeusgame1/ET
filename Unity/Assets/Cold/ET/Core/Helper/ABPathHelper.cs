@@ -1,10 +1,4 @@
-﻿//------------------------------------------------------------
-// Author: 烟雨迷离半世殇
-// Mail: 1778139321@qq.com
-// Data: 2020年10月14日 22:27:15
-//------------------------------------------------------------
-
-namespace ETCold
+﻿namespace ETCold
 {
     /// <summary>
     /// AB实用函数集，主要是路径拼接
@@ -20,14 +14,21 @@ namespace ETCold
         {
             return $"Assets/Bundles/FUI/{fileName}.bytes";
         }
-
+        public static string GetFGUIAtlasResPath(string fileName)
+        {
+            return $"Assets/Bundles/FUI/{fileName}";
+        }
         public static string GetFGUIResPath(string fileName, string extension)
         {
             return $"Assets/Bundles/FUI/{fileName}{extension}";
         }
-        public static string GetUGUIPath(string fileName)
+        public static string GetUGUIPath(string name)
         {
-            return $"Assets/Bundles/UI/{fileName}.prefab";
+            return $"Assets/Bundles/UI/{name}.prefab";
+        }
+        public static string GetConfigPath(string fileName)
+        {
+            return $"Assets/Bundles/Config/{fileName}.bytes";
         }
         public static string GetNormalConfigPath(string fileName)
         {
@@ -43,10 +44,7 @@ namespace ETCold
         {
             return $"Assets/Bundles/SkillConfigs/{fileName}.prefab";
         }
-        public static string GetConfigPath(string fileName)
-        {
-            return $"Assets/Bundles/Config/{fileName}.bytes";
-        }
+
         public static string GetUnitPath(string fileName)
         {
             return $"Assets/Bundles/Unit/{fileName}.prefab";

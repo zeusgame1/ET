@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="n5i3k4bj">
+  <resources>
+    <component id="dlg60" name="Component1.xml" path="/" exported="true"/>
+    <component id="f5b71" name="Button1.xml" path="/"/>
+    <image id="gwhc2" name="1.png" path="/Images/startgame/background/"/>
+    <component id="gwhc3" name="Login.xml" path="/Panels/" exported="true"/>
+    <image id="gwhc4" name="1.png" path="/Images/Login/animate/effect/"/>
+    <image id="gwhc5" name="2.png" path="/Images/Login/animate/effect/"/>
+    <image id="gwhc6" name="3.png" path="/Images/Login/animate/effect/"/>
+    <image id="gwhc7" name="4.png" path="/Images/Login/animate/effect/"/>
+    <image id="gwhc8" name="5.png" path="/Images/Login/animate/effect/"/>
+    <image id="gwhc9" name="6.png" path="/Images/Login/animate/effect/"/>
+    <image id="gwhca" name="7.png" path="/Images/Login/animate/effect/"/>
+    <image id="gwhcb" name="1.png" path="/Images/Login/animate/light/"/>
+    <image id="gwhcc" name="2.png" path="/Images/Login/animate/light/"/>
+    <image id="gwhcd" name="3.png" path="/Images/Login/animate/light/"/>
+    <image id="gwhce" name="4.png" path="/Images/Login/animate/light/"/>
+    <image id="gwhcf" name="5.png" path="/Images/Login/animate/light/"/>
+    <image id="gwhcg" name="6.png" path="/Images/Login/animate/light/"/>
+    <image id="gwhch" name="7.png" path="/Images/Login/animate/light/"/>
+    <image id="gwhci" name="8.png" path="/Images/Login/animate/light/"/>
+    <image id="gwhcj" name="9.png" path="/Images/Login/animate/light/"/>
+    <image id="gwhck" name="1.png" path="/Images/Login/animate/xuanwu/"/>
+    <image id="gwhcl" name="2.png" path="/Images/Login/animate/xuanwu/"/>
+    <image id="gwhcm" name="3.png" path="/Images/Login/animate/xuanwu/"/>
+    <image id="gwhcn" name="4.png" path="/Images/Login/animate/xuanwu/"/>
+    <image id="gwhco" name="5.png" path="/Images/Login/animate/xuanwu/"/>
+    <image id="gwhcp" name="6.png" path="/Images/Login/animate/xuanwu/"/>
+    <image id="gwhcq" name="7.png" path="/Images/Login/animate/xuanwu/"/>
+    <image id="gwhcr" name="8.png" path="/Images/Login/animate/xuanwu/"/>
+    <image id="gwhcs" name="9.png" path="/Images/Login/animate/xuanwu/"/>
+    <image id="gwhct" name="1.png" path="/Images/Login/back/"/>
+    <image id="gwhcu" name="1.png" path="/Images/Login/cancel/"/>
+    <image id="gwhcv" name="2.png" path="/Images/Login/cancel/"/>
+    <image id="gwhcw" name="3.png" path="/Images/Login/cancel/"/>
+    <image id="gwhcx" name="4.png" path="/Images/Login/cancel/"/>
+    <image id="gwhcy" name="1.png" path="/Images/Login/caution/"/>
+    <image id="gwhcz" name="1.png" path="/Images/Login/checkbox/"/>
+    <image id="gwhc10" name="2.png" path="/Images/Login/checkbox/"/>
+    <image id="gwhc11" name="1.png" path="/Images/Login/getpwd/"/>
+    <image id="gwhc12" name="2.png" path="/Images/Login/getpwd/"/>
+    <image id="gwhc13" name="3.png" path="/Images/Login/getpwd/"/>
+    <image id="gwhc14" name="4.png" path="/Images/Login/getpwd/"/>
+    <image id="gwhc15" name="1.png" path="/Images/Login/ok/"/>
+    <image id="gwhc16" name="2.png" path="/Images/Login/ok/"/>
+    <image id="gwhc17" name="3.png" path="/Images/Login/ok/"/>
+    <image id="gwhc18" name="4.png" path="/Images/Login/ok/"/>
+    <image id="gwhc19" name="1.png" path="/Images/Login/register/"/>
+    <image id="gwhc1a" name="2.png" path="/Images/Login/register/"/>
+    <image id="gwhc1b" name="3.png" path="/Images/Login/register/"/>
+    <image id="gwhc1c" name="4.png" path="/Images/Login/register/"/>
+    <image id="gwhc1d" name="1.png" path="/Images/Login/softkbd/"/>
+    <image id="gwhc1e" name="2.png" path="/Images/Login/softkbd/"/>
+    <image id="gwhc1f" name="3.png" path="/Images/Login/softkbd/"/>
+    <image id="gwhc1g" name="4.png" path="/Images/Login/softkbd/"/>
+    <image id="gwhc1h" name="1.png" path="/Images/Login/YY/"/>
+    <image id="gwhc1i" name="2.png" path="/Images/Login/YY/"/>
+    <image id="gwhc1j" name="3.png" path="/Images/Login/YY/"/>
+    <image id="gwhc1k" name="4.png" path="/Images/Login/YY/"/>
+    <component id="gwhc1l" name="LoginStartButton.xml" path="/Components/"/>
+  </resources>
+  <publish name="" path="../Codes" packageCount="2" genCode="true" codePath="..\Codes"/>
+</packageDescription>

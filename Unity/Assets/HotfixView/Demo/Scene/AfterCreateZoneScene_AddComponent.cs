@@ -8,6 +8,11 @@ namespace ET
             Scene zoneScene = args.ZoneScene;
             zoneScene.AddComponent<UIEventComponent>();
             zoneScene.AddComponent<UIComponent>();
+
+            zoneScene.AddComponent<FUIComponent>();
+            zoneScene.AddComponent<FUIPackageComponent>();
+            zoneScene.AddComponent<FUIScalerComponent>();
+            await zoneScene.AddComponent<FUIInitComponent>().Init();
             await ETTask.CompletedTask;
         }
     }

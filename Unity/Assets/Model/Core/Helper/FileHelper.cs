@@ -34,7 +34,7 @@ namespace ET
 			}
 		}
 
-		public static void CopyDirectory(string srcDir, string tgtDir)
+		public static void CopyDirectory(string srcDir, string tgtDir,bool v = true)
 		{
 			DirectoryInfo source = new DirectoryInfo(srcDir);
 			DirectoryInfo target = new DirectoryInfo(tgtDir);
@@ -60,6 +60,7 @@ namespace ET
 			{
 				File.Copy(files[i].FullName, Path.Combine(target.FullName, files[i].Name), true);
 			}
+			if (!v) return;
 	
 			DirectoryInfo[] dirs = source.GetDirectories();
 	
@@ -68,5 +69,7 @@ namespace ET
 				CopyDirectory(dirs[j].FullName, Path.Combine(target.FullName, dirs[j].Name));
 			}
 		}
-	}
+
+      
+    }
 }

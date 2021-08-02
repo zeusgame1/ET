@@ -634,6 +634,8 @@ namespace libx
                 Assets.AddSearchPath("Assets/Bundles/ScriptableObject");
                 Assets.AddSearchPath("Assets/Bundles/Config");
                 Assets.AddSearchPath("Assets/Bundles/UI");
+                Assets.AddSearchPath("Assets/Bundles/FUI");
+
                 Assets.AddSearchPath("Assets/Bundles/Independent");
                 Assets.AddSearchPath("Assets/Bundles/Unit");
                 init.Release();

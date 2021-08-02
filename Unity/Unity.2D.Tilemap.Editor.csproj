@@ -90,8 +90,8 @@
     <Compile Include="Library\PackageCache\com.unity.2d.tilemap@1.0.0\Editor\TileDragAndDrop.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.tilemap@1.0.0\Editor\GridPaintingState.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.tilemap@1.0.0\Editor\EditorTools\SelectTool.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.tilemap@1.0.0\Editor\GridPaintPaletteWindow.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.tilemap@1.0.0\Editor\EditorTools\MoveTool.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.tilemap@1.0.0\Editor\GridPaintPaletteWindow.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.tilemap@1.0.0\Editor\TileDragAndDropManager.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.tilemap@1.0.0\Editor\GridPaletteAddPopup.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.tilemap@1.0.0\Editor\SceneViewOpenTilePaletteHelper.cs" />
