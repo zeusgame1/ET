@@ -1,5 +1,6 @@
 ﻿namespace ET
 {
+    [Event]
     public class LoadingFinishEvent_RemoveLoadingUI : AEvent<EventType.LoadingFinish>
     {
         protected override async ETTask Run(EventType.LoadingFinish args)

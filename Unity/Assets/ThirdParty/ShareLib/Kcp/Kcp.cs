@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-
+#if NOT_UNITY
 namespace ET
+#else 
+namespace ETCold
+#endif
 {
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
     public delegate int KcpOutput(IntPtr buf, int len, IntPtr kcp, IntPtr user);

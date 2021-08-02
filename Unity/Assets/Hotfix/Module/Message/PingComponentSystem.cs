@@ -1,5 +1,7 @@
 using System;
-
+#if !NOT_UNITY
+using ETCold;
+#endif
 namespace ET
 {
     [ObjectSystem]

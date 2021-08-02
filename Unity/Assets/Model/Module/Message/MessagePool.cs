@@ -20,13 +20,15 @@ namespace ET
 
         public object Fetch(Type type)
         {
+            
+
             //Queue<object> queue;
             //if (!this.dictionary.TryGetValue(type, out queue))
             //{
             //    queue = new Queue<object>();
             //    this.dictionary.Add(type, queue);
             //}
-//
+            //
             //object obj;
             //if (queue.Count > 0)
             //{
@@ -38,7 +40,7 @@ namespace ET
             //}
 
             //return obj;
-			return Activator.CreateInstance(type);
+            return Activator.CreateInstance(type);
         }
 
         public T Fetch<T>() where T : class

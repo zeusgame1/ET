@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-
+#if !NOT_UNITY
+using ETCold;
+#endif
 namespace ET
 {
     [ObjectSystem]

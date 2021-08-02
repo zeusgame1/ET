@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
-
+#if !NOT_UNITY
+using ETCold;
+#endif
 namespace ET
 {
     [ObjectSystem]

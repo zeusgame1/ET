@@ -23,8 +23,9 @@ namespace ET
         {
             Instance = this;
         }
-		
+		#if NOT_UNITY
 		[ProtoAfterDeserialization]
+        #endif
         public void AfterDeserialization()
         {
             foreach (StartZoneConfig config in list)
@@ -77,8 +78,9 @@ namespace ET
 		[ProtoMember(3, IsRequired  = true)]
 		public string DBName { get; set; }
 
-
+        #if NOT_UNITY
 		[ProtoAfterDeserialization]
+        #endif
         public void AfterDeserialization()
         {
             this.EndInit();

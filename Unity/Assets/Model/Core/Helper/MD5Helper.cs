@@ -1,6 +1,8 @@
 ﻿using System.IO;
 using System.Security.Cryptography;
-
+#if !NOT_UNITY
+using ETCold;
+#endif
 namespace ET
 {
 	public static class MD5Helper

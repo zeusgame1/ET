@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
@@ -11,6 +11,10 @@
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
       <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+      <DefineConstants>TRACE;NOT_UNITY</DefineConstants>
     </PropertyGroup>
 
     <ItemGroup>
@@ -41,9 +45,9 @@
       <Compile Include="..\..\Unity\Assets\ThirdParty\protobuf-net\DiscriminatedUnion.cs">
         <Link>protobuf-net\DiscriminatedUnion.cs</Link>
       </Compile>
-      <Compile Include="..\..\Unity\Assets\ThirdParty\protobuf-net\DiscriminatedUnion.Serializable.cs">
+      <!--<Compile Include="..\..\Unity\Assets\ThirdParty\protobuf-net\DiscriminatedUnion.Serializable.cs">
         <Link>protobuf-net\DiscriminatedUnion.Serializable.cs</Link>
-      </Compile>
+      </Compile>-->
       <Compile Include="..\..\Unity\Assets\ThirdParty\protobuf-net\Extensible.cs">
         <Link>protobuf-net\Extensible.cs</Link>
       </Compile>
@@ -65,12 +69,12 @@
       <Compile Include="..\..\Unity\Assets\ThirdParty\protobuf-net\ImplicitFields.cs">
         <Link>protobuf-net\ImplicitFields.cs</Link>
       </Compile>
-      <Compile Include="..\..\Unity\Assets\ThirdParty\protobuf-net\IProtoInputT.cs">
+      <!--<Compile Include="..\..\Unity\Assets\ThirdParty\protobuf-net\IProtoInputT.cs">
         <Link>protobuf-net\IProtoInputT.cs</Link>
       </Compile>
       <Compile Include="..\..\Unity\Assets\ThirdParty\protobuf-net\IProtoOutputT.cs">
         <Link>protobuf-net\IProtoOutputT.cs</Link>
-      </Compile>
+      </Compile>-->
       <Compile Include="..\..\Unity\Assets\ThirdParty\protobuf-net\KeyValuePairProxy.cs">
         <Link>protobuf-net\KeyValuePairProxy.cs</Link>
       </Compile>
@@ -101,9 +105,9 @@
       <Compile Include="..\..\Unity\Assets\ThirdParty\protobuf-net\Meta\TypeModel.cs">
         <Link>protobuf-net\Meta\TypeModel.cs</Link>
       </Compile>
-      <Compile Include="..\..\Unity\Assets\ThirdParty\protobuf-net\Meta\TypeModel.InputOutput.cs">
+      <!--<Compile Include="..\..\Unity\Assets\ThirdParty\protobuf-net\Meta\TypeModel.InputOutput.cs">
         <Link>protobuf-net\Meta\TypeModel.InputOutput.cs</Link>
-      </Compile>
+      </Compile>-->
       <Compile Include="..\..\Unity\Assets\ThirdParty\protobuf-net\Meta\ValueMember.cs">
         <Link>protobuf-net\Meta\ValueMember.cs</Link>
       </Compile>
@@ -113,9 +117,9 @@
       <Compile Include="..\..\Unity\Assets\ThirdParty\protobuf-net\PrefixStyle.cs">
         <Link>protobuf-net\PrefixStyle.cs</Link>
       </Compile>
-      <Compile Include="..\..\Unity\Assets\ThirdParty\protobuf-net\Properties\AssemblyInfo.cs">
+      <!--<Compile Include="..\..\Unity\Assets\ThirdParty\protobuf-net\Properties\AssemblyInfo.cs">
         <Link>protobuf-net\Properties\AssemblyInfo.cs</Link>
-      </Compile>
+      </Compile>-->
       <Compile Include="..\..\Unity\Assets\ThirdParty\protobuf-net\ProtoContractAttribute.cs">
         <Link>protobuf-net\ProtoContractAttribute.cs</Link>
       </Compile>
@@ -301,6 +305,9 @@
       </Compile>
       <Compile Include="..\..\Unity\Assets\ThirdParty\protobuf-net\WireType.cs">
         <Link>protobuf-net\WireType.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Unity\Assets\ThirdParty\protobuf-net\PBType.cs">
+        <Link>protobuf-net\PBType.cs</Link>
       </Compile>
     </ItemGroup>
 

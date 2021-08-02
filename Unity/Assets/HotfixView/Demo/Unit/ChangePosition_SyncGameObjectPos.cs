@@ -2,6 +2,7 @@
 
 namespace ET
 {
+    [Event]
     public class ChangePosition_SyncGameObjectPos: AEvent<EventType.ChangePosition>
     {
         protected override async ETTask Run(EventType.ChangePosition args)

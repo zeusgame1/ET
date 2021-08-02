@@ -1,56 +1,58 @@
-﻿using System;
-using System.Linq;
-using System.Reflection;
-using System.Threading;
+﻿//using System;
+//using System.Linq;
+//using System.Reflection;
+//using System.Threading;
+//#if !NOT_UNITY
+//using ETCold;
+//#endif
+//namespace ET
+//{
+//	public class Entry : IEntry
+//	{
+//		public void Start()
+//		{
+//			try
+//			{
+//				SynchronizationContext.SetSynchronizationContext(ThreadSynchronizationContext.Instance);
 
-namespace ET
-{
-	public class Entry : IEntry
-	{
-		public void Start()
-		{
-			try
-			{
-				SynchronizationContext.SetSynchronizationContext(ThreadSynchronizationContext.Instance);
-
-				string[] assemblyNames = { "Unity.Model.dll", "Unity.Hotfix.dll", "Unity.ModelView.dll", "Unity.HotfixView.dll" };
+//				string[] assemblyNames = { "Unity.Model.dll", "Unity.Hotfix.dll", "Unity.ModelView.dll", "Unity.HotfixView.dll" };
 				
-				foreach (Assembly assembly in AppDomain.CurrentDomain.GetAssemblies())
-				{
-					string assemblyName = assembly.ManifestModule.Name;
-					if (!assemblyNames.Contains(assemblyName))
-					{
-						continue;
-					}
-					Game.EventSystem.Add(assembly);
-				}
+//				foreach (Assembly assembly in AppDomain.CurrentDomain.GetAssemblies())
+//				{
+//					string assemblyName = assembly.ManifestModule.Name;
+//					if (!assemblyNames.Contains(assemblyName))
+//					{
+//						continue;
+//					}
+//					Game.EventSystem.Add(assembly);
+//				}
 				
-				ProtobufHelper.Init();
+//				ProtobufHelper.Init();
 				
-				Game.Options = new Options();
+//				Game.Options = new Options();
 				
-				Game.EventSystem.Publish(new EventType.AppStart());
-			}
-			catch (Exception e)
-			{
-				Log.Error(e);
-			}
-		}
+//				Game.EventSystem.Publish(new EventType.AppStart());
+//			}
+//			catch (Exception e)
+//			{
+//				Log.Error(e);
+//			}
+//		}
 
-		public void Update()
-		{
-			ThreadSynchronizationContext.Instance.Update();
-			Game.EventSystem.Update();
-		}
+//		public void Update()
+//		{
+//			ThreadSynchronizationContext.Instance.Update();
+//			Game.EventSystem.Update();
+//		}
 
-		public void LateUpdate()
-		{
-			Game.EventSystem.LateUpdate();
-		}
+//		public void LateUpdate()
+//		{
+//			Game.EventSystem.LateUpdate();
+//		}
 
-		public void OnApplicationQuit()
-		{
-			Game.Close();
-		}
-	}
-}
+//		public void OnApplicationQuit()
+//		{
+//			Game.Close();
+//		}
+//	}
+//}

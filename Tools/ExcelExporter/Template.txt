@@ -23,8 +23,9 @@ namespace ET
         {
             Instance = this;
         }
-		
+		#if NOT_UNITY
 		[ProtoAfterDeserialization]
+        #endif
         public void AfterDeserialization()
         {
             foreach ((ConfigName) config in list)
@@ -71,8 +72,9 @@ namespace ET
 	public partial class (ConfigName): ProtoObject, IConfig
 	{
 (Fields)
-
+        #if NOT_UNITY
 		[ProtoAfterDeserialization]
+        #endif
         public void AfterDeserialization()
         {
             this.EndInit();

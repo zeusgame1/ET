@@ -23,8 +23,9 @@ namespace ET
         {
             Instance = this;
         }
-		
+		#if NOT_UNITY
 		[ProtoAfterDeserialization]
+        #endif
         public void AfterDeserialization()
         {
             foreach (UnitConfig config in list)
@@ -83,8 +84,9 @@ namespace ET
 		[ProtoMember(6, IsRequired  = true)]
 		public int Weight { get; set; }
 
-
+        #if NOT_UNITY
 		[ProtoAfterDeserialization]
+        #endif
         public void AfterDeserialization()
         {
             this.EndInit();

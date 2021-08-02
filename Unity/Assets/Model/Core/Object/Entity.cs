@@ -10,7 +10,7 @@ using MongoDB.Bson.Serialization.Attributes;
 namespace ET
 {
     [Flags]
-    public enum EntityStatus: byte
+    public enum EntityStatus : byte
     {
         None = 0,
         IsFromPool = 1,
@@ -19,7 +19,7 @@ namespace ET
         IsCreate = 1 << 3,
     }
 
-    public partial class Entity: Object
+    public partial class Entity : Object
     {
         [IgnoreDataMember]
         private static readonly Pool<HashSet<Entity>> hashSetPool = new Pool<HashSet<Entity>>();
@@ -303,7 +303,7 @@ namespace ET
             }
         }
 
-		[IgnoreDataMember]
+        [IgnoreDataMember]
         [BsonElement("Children")]
         [BsonIgnoreIfNull]
         private HashSet<Entity> childrenDB;
@@ -540,7 +540,7 @@ namespace ET
             this.RemoveFromComponentsDB(component);
         }
 
-        public K GetChild<K>(long id) where K: Entity
+        public K GetChild<K>(long id) where K : Entity
         {
             if (this.children == null)
             {
@@ -581,7 +581,7 @@ namespace ET
 
         public K AddComponent<K>() where K : Entity, new()
         {
-            Type type = typeof (K);
+            Type type = typeof(K);
             if (this.components != null && this.components.ContainsKey(type))
             {
                 throw new Exception($"entity already has component: {type.FullName}");
@@ -590,13 +590,13 @@ namespace ET
             K component = CreateWithComponentParent<K>();
 
             this.AddToComponent(type, component);
-            
+
             return component;
         }
 
         public K AddComponent<K, P1>(P1 p1) where K : Entity, new()
         {
-            Type type = typeof (K);
+            Type type = typeof(K);
             if (this.components != null && this.components.ContainsKey(type))
             {
                 throw new Exception($"entity already has component: {type.FullName}");
@@ -611,7 +611,7 @@ namespace ET
 
         public K AddComponent<K, P1, P2>(P1 p1, P2 p2) where K : Entity, new()
         {
-            Type type = typeof (K);
+            Type type = typeof(K);
             if (this.components != null && this.components.ContainsKey(type))
             {
                 throw new Exception($"entity already has component: {type.FullName}");
@@ -626,7 +626,7 @@ namespace ET
 
         public K AddComponent<K, P1, P2, P3>(P1 p1, P2 p2, P3 p3) where K : Entity, new()
         {
-            Type type = typeof (K);
+            Type type = typeof(K);
             if (this.components != null && this.components.ContainsKey(type))
             {
                 throw new Exception($"entity already has component: {type.FullName}");
@@ -651,7 +651,7 @@ namespace ET
                 return;
             }
 
-            Type type = typeof (K);
+            Type type = typeof(K);
             Entity c = this.GetComponent(type);
             if (c == null)
             {
@@ -715,12 +715,12 @@ namespace ET
             }
 
             Entity component;
-            if (!this.components.TryGetValue(typeof (K), out component))
+            if (!this.components.TryGetValue(typeof(K), out component))
             {
                 return default;
             }
 
-            return (K) component;
+            return (K)component;
         }
 
         public virtual Entity GetComponent(Type type)

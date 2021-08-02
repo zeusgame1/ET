@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
-
+#if !NOT_UNITY
+using ETCold;
+#endif
 namespace ET
 {
 	[MessageHandler]

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Threading;
-
+#if !NOT_UNITY
+using ETCold;
+#endif
 namespace ET
 {
     [ObjectSystem]

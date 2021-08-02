@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+#if !NOT_UNITY
 
+using ETCold;
+
+#endif
 namespace ET
 {
     public static class Game
@@ -31,7 +35,28 @@ namespace ET
 
         public static Options Options;
 
-        public static ILog ILog;
+
+
+        private static ILog m_ILog;
+        public static ILog ILog
+        {
+
+            get
+            {
+                if (m_ILog == null)
+                {
+#if NOT_UNITY
+                    m_ILog = new NLogger("MissingLog");
+#endif
+                }
+                return m_ILog;
+            }
+            set
+            {
+                m_ILog = value;
+            }
+
+        }
 
         public static List<Action> FrameFinishCallback = new List<Action>();
 

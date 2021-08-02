@@ -1,5 +1,7 @@
 ﻿using System;
 using UnityEngine.Networking;
+using ETCold;
+
 
 namespace ET
 {
@@ -14,13 +16,7 @@ namespace ET
 	
 	public class UnityWebRequestAsync : Entity
 	{
-		public class AcceptAllCertificate: CertificateHandler
-		{
-			protected override bool ValidateCertificate(byte[] certificateData)
-			{
-				return true;
-			}
-		}
+		
 		
 		public static AcceptAllCertificate certificateHandler = new AcceptAllCertificate();
 		

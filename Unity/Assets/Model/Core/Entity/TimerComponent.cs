@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-
+#if !NOT_UNITY
+using ETCold;
+#endif
 namespace ET
 {
     public enum TimerClass

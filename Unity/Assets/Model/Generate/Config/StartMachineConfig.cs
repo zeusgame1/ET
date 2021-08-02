@@ -23,8 +23,9 @@ namespace ET
         {
             Instance = this;
         }
-		
+		#if NOT_UNITY
 		[ProtoAfterDeserialization]
+        #endif
         public void AfterDeserialization()
         {
             foreach (StartMachineConfig config in list)
@@ -79,8 +80,9 @@ namespace ET
 		[ProtoMember(4, IsRequired  = true)]
 		public string WatcherPort { get; set; }
 
-
+        #if NOT_UNITY
 		[ProtoAfterDeserialization]
+        #endif
         public void AfterDeserialization()
         {
             this.EndInit();

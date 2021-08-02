@@ -331,8 +331,8 @@ namespace ET
             {
                 Type type = ass.GetType($"ET.{protoName}Category");
                 Type subType = ass.GetType($"ET.{protoName}");
-                Serializer.NonGeneric.PrepareSerializer(type);
-                Serializer.NonGeneric.PrepareSerializer(subType);
+                //Serializer.NonGeneric.PrepareSerializer(type);
+                //Serializer.NonGeneric.PrepareSerializer(subType);
                 
                 
                 string json = File.ReadAllText(Path.Combine(string.Format(jsonDir, configType), $"{protoName}.txt"));

@@ -22,6 +22,39 @@
       <DefineConstants>TRACECOREAPP;NOT_UNITY</DefineConstants>
     </PropertyGroup>
     <ItemGroup>
+      <Compile Include="..\..\Unity\Assets\Cold\ET\Core\ThreadSynchronizationContext.cs">
+        <Link>Core\%(FileName)%(Extension)</Link>
+      </Compile>
+      <Compile Include="..\..\Unity\Assets\Cold\ET\Core\StructBsonSerialize.cs">
+        <Link>Core\%(FileName)%(Extension)</Link>
+      </Compile>
+      <Compile Include="..\..\Unity\Assets\Cold\ET\Core\MultiMapSet.cs">
+        <Link>Core\%(FileName)%(Extension)</Link>
+      </Compile>
+      <Compile Include="..\..\Unity\Assets\Cold\ET\Core\MultiDictionary.cs">
+        <Link>Core\%(FileName)%(Extension)</Link>
+      </Compile>
+      <Compile Include="..\..\Unity\Assets\Cold\ET\Core\MultiMap.cs">
+        <Link>Core\%(FileName)%(Extension)</Link>
+      </Compile>
+      <Compile Include="..\..\Unity\Assets\Cold\ET\Core\Helper\RandomHelper.cs">
+        <Link>Core\Helper\%(FileName)%(Extension)</Link>
+      </Compile>
+      <Compile Include="..\..\Unity\Assets\Cold\ET\Core\Helper\ByteHelper.cs">
+        <Link>Core\Helper\%(FileName)%(Extension)</Link>
+      </Compile>
+      <Compile Include="..\..\Unity\Assets\Cold\ET\Core\Helper\StringHelper.cs">
+        <Link>Core\Helper\%(FileName)%(Extension)</Link>
+      </Compile>
+      <Compile Include="..\..\Unity\Assets\Cold\ET\Colletions\**\*.cs">
+        <Link>Core\%(FileName)%(Extension)</Link>
+      </Compile>
+      <Compile Include="..\..\Unity\Assets\Cold\ET\Core\Module\**\*.cs">
+        <Link>Module\%(RecursiveDir)%(FileName)%(Extension)</Link>
+      </Compile>
+      <Compile Include="..\..\Unity\Assets\Cold\ET\Core\Async\**\*.cs">
+        <Link>Core\Async\%(RecursiveDir)%(FileName)%(Extension)</Link>
+      </Compile>
         <Compile Include="..\..\Unity\Assets\Editor\Helper\MongoHelper.cs">
           <Link>Base\MongoHelper.cs</Link>
         </Compile>
@@ -88,6 +121,9 @@
         <Compile Include="..\..\Server\Model\Module\Console\**\*.cs">
             <Link>Module\Console\%(RecursiveDir)%(FileName)%(Extension)</Link>
         </Compile>
+    </ItemGroup>
+    <ItemGroup>
+      <Compile Remove="..\..\Unity\Assets\Cold\ET\Core\AcceptAllCertificate.cs" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\..\ThirdParty\protobuf-net\protobuf-net.csproj" />

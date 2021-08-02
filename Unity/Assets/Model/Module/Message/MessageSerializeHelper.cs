@@ -1,7 +1,9 @@
 ﻿using System;
 using System.IO;
 using MongoDB.Bson.IO;
-
+#if !NOT_UNITY
+using ETCold;
+#endif
 namespace ET
 {
     public static class MessageSerializeHelper

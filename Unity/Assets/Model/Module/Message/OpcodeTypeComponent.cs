@@ -40,6 +40,7 @@ namespace ET
             this.requestResponse.Clear();
 
             HashSet<Type> types = Game.EventSystem.GetTypes(typeof (MessageAttribute));
+            Log.Info($"  hashSet Count :{types.Count}");
             foreach (Type type in types)
             {
                 object[] attrs = type.GetCustomAttributes(typeof (MessageAttribute), false);
@@ -78,9 +79,11 @@ namespace ET
                         Log.Error($"not found responseType: {type}");
                         continue;
                     }
-
+                 
                     ResponseTypeAttribute responseTypeAttribute = attrs[0] as ResponseTypeAttribute;
-                    this.requestResponse.Add(type, responseTypeAttribute.Type);
+               
+                    this.requestResponse.Add(type,Type.GetType(responseTypeAttribute.Type));
+                   
                 }
             }
         }

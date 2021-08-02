@@ -1,3 +1,6 @@
+#if !NOT_UNITY
+using ETCold;
+#endif
 namespace ET
 {
     [ObjectSystem]
@@ -5,7 +8,7 @@ namespace ET
     {
         public override void Awake(SessionIdleCheckerComponent self, int checkInteral)
         {
-            self.RepeatedTimer = TimerComponent.Instance.NewRepeatedTimer(checkInteral, self.Check);
+            self.RepeatedTimer = TimerComponent.Instance.NewRepeatedTimer(checkInteral,()=> { self.Check(); });
         }
     }
 

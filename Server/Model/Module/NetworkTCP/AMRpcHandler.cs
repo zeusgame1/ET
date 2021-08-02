@@ -1,6 +1,10 @@
 using System;
 
+#if NOT_UNITY
 namespace ET
+#else 
+namespace ETCold
+#endif
 {
     [MessageHandler]
     public abstract class AMRpcHandler<Request, Response>: IMHandler where Request : class, IRequest where Response : class, IResponse

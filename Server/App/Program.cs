@@ -21,9 +21,9 @@ namespace ET
 			
 			try
 			{		
-				Game.EventSystem.Add(typeof(Game).Assembly);
-				Game.EventSystem.Add(DllHelper.GetHotfixAssembly());
-				
+				Game.EventSystem.Add(typeof(Game).Assembly, DllHelper.GetHotfixAssembly());
+			
+				Game.EventSystem.Init();
 				ProtobufHelper.Init();
 				MongoHelper.Init();
 				
@@ -40,7 +40,7 @@ namespace ET
 				
 				Log.Info($"server start........................ {Game.Scene.Id}");
 
-				Game.EventSystem.Publish(new EventType.AppStart());
+				Game.EventSystem.Publish(new EventType.AppStart()).Coroutine();
 				
 				while (true)
 				{

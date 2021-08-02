@@ -4,6 +4,7 @@ using System.Net;
 
 namespace ET
 {
+    [Event]
     public class AppStart_Init: AEvent<EventType.AppStart>
     {
         protected override async ETTask Run(EventType.AppStart args)

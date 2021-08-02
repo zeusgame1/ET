@@ -1,4 +1,7 @@
-﻿﻿namespace ET
+﻿#if !NOT_UNITY
+using ETCold;
+#endif
+namespace ET
 {
     public class NetKcpComponent: Entity
     {

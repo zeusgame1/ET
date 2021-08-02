@@ -4,15 +4,16 @@ using System.Threading.Tasks;
 
 namespace ET
 {
-    public class ConfigAwakeSystem : AwakeSystem<ConfigComponent>
+	[ObjectSystem]
+	public class ConfigAwakeSystem : AwakeSystem<ConfigComponent>
     {
         public override void Awake(ConfigComponent self)
         {
 	        ConfigComponent.Instance = self;
         }
     }
-    
-    public class ConfigDestroySystem : DestroySystem<ConfigComponent>
+	[ObjectSystem]
+	public class ConfigDestroySystem : DestroySystem<ConfigComponent>
     {
 	    public override void Destroy(ConfigComponent self)
 	    {
@@ -38,17 +39,31 @@ namespace ET
 			
 			Dictionary<string, byte[]> configBytes = new Dictionary<string, byte[]>();
 			self.ConfigLoader.GetAllConfigBytes(configBytes);
-
-			List<Task> listTasks = new List<Task>();
-
-			foreach (Type type in types)
+#if !NOT_UNITY
+			async ETTask Load(Type configType, Dictionary<string, byte[]> configBytes)
 			{
-				Task task = Task.Run(() => self.LoadOneInThread(type, configBytes));
-				listTasks.Add(task);
+				await ETTask.CompletedTask;
+				self.LoadOneInThread(configType, configBytes);
 			}
+			List<ETTask> tasks = new List<ETTask>();
 
-			await Task.WhenAll(listTasks.ToArray());
-		}
+			foreach (var item in types)
+			{
+				tasks.Add(Load(item, configBytes));//好像这么写还是同步加载
+			}
+			await ETTaskHelper.WaitAll(tasks);
+#else
+            List<Task> listTasks = new List<Task>();
+
+            foreach (Type type in types)
+            {
+                Task task = Task.Run(() => self.LoadOneInThread(type, configBytes));
+                listTasks.Add(task);
+            }
+
+            await Task.WhenAll(listTasks.ToArray());
+#endif
+        }
 
 		private static void LoadOneInThread(this ConfigComponent self, Type configType, Dictionary<string, byte[]> configBytes)
 		{

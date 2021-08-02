@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e37899b02da97a4099222e8e777e5ab, type: 3}
+  m_Name: Manifest
+  m_EditorClassIdentifier: 
+  activeVariants: []
+  assets:
+  - bundle: 14
+    dir: 0
+    name: AIConfigCategory.bytes
+  - bundle: 11
+    dir: 0
+    name: StartMachineConfigCategory.bytes
+  - bundle: 0
+    dir: 0
+    name: StartProcessConfigCategory.bytes
+  - bundle: 10
+    dir: 0
+    name: StartSceneConfigCategory.bytes
+  - bundle: 6
+    dir: 0
+    name: StartZoneConfigCategory.bytes
+  - bundle: 8
+    dir: 0
+    name: UnitConfigCategory.bytes
+  - bundle: 5
+    dir: 1
+    name: Code.prefab
+  - bundle: 16
+    dir: 2
+    name: UILobby.prefab
+  - bundle: 2
+    dir: 2
+    name: UILogin.prefab
+  - bundle: 4
+    dir: 3
+    name: Unit.prefab
+  - bundle: 9
+    dir: 4
+    name: Init.unity
+  - bundle: 7
+    dir: 4
+    name: Map.unity
+  bundles:
+  - deps: 
+    hash: 98f3f148930f5d9444c526e13c96e790
+    id: 0
+    len: 1286
+    name: 05014c9edac5d88b8ff22950a8eba351.unity3d
+  - deps: 0d000000
+    hash: f2c24879a6602d3f2c503a898b15c3ec
+    id: 1
+    len: 38172
+    name: 0c9e189dad003a836f37e795f047d0c1.unity3d
+  - deps: 
+    hash: a604150462394d67221a15e2fe18ad0d
+    id: 2
+    len: 14115
+    name: 0fdb89a04e55223f72b5ad7a78c32c00.unity3d
+  - deps: 010000000c0000000d00000011000000
+    hash: b69745e3e4bbe755c2767163b14030d7
+    id: 3
+    len: 4970
+    name: 2e8ae952cd5936cb705ddeef2ba91ea4.unity3d
+  - deps: 01000000030000000c0000000d0000000f00000011000000
+    hash: 3e7ef35d309ed2a535979ddea988cbff
+    id: 4
+    len: 2559
+    name: 2efc619c3f96e68cc7eaeffd09addad3.unity3d
+  - deps: 
+    hash: 321996c5b78bb9fde47f7c4059cbb4f5
+    id: 5
+    len: 334598
+    name: 55ef7382f5a509040b488a114573722e.unity3d
+  - deps: 
+    hash: daa343498a1e0156c3fdc80c73bc06ba
+    id: 6
+    len: 1274
+    name: 76e7f033de36edc4fd11f354bc4f350b.unity3d
+  - deps: 
+    hash: b9054c927ec4547ca6c3b532491a3b17
+    id: 7
+    len: 693087
+    name: 79169a669404a1225d75d2917f9af90a.unity3d
+  - deps: 
+    hash: a8ee2bde3f06507e35e6fac90f60cb7f
+    id: 8
+    len: 1272
+    name: 834fd1170cc25a7679603034262ce44a.unity3d
+  - deps: 0100000003000000040000000c0000000d0000000f00000011000000
+    hash: b338933d28b038d614bc4fd6a091a908
+    id: 9
+    len: 118856
+    name: 95460f5557eb560c3f6979486032fa76.unity3d
+  - deps: 
+    hash: 8f668869874e42681194a97c5a7a1200
+    id: 10
+    len: 1350
+    name: 95ef3f249d8731dfb01bf7821eb98dc7.unity3d
+  - deps: 
+    hash: f30c4397ced8f35de4411a8cae439005
+    id: 11
+    len: 1263
+    name: 9cd3154c05cb13bca1b8f76cc4512eee.unity3d
+  - deps: 010000000d000000
+    hash: eacc08fa61b97e663efbba28af6efa09
+    id: 12
+    len: 100353
+    name: a5d29d973be3bacd444d9c073d9804fc.unity3d
+  - deps: 
+    hash: bc0fb2199726889b44efbbeef4ac7368
+    id: 13
+    len: 607634
+    name: aa0d3d300518262d6bfe262ee5e37fd2.unity3d
+  - deps: 
+    hash: 850546183507d94b34f11021f5e60756
+    id: 14
+    len: 1269
+    name: c01a72a10e08a7e168c0512802f3b838.unity3d
+  - deps: 01000000030000000c0000000d00000011000000
+    hash: 581f2ae2e47864aa4e9a600d93879d64
+    id: 15
+    len: 7084
+    name: c22e947d13539bee0af4c7fb8ff048df.unity3d
+  - deps: 
+    hash: 5ecf92a146f5b74725a712d9bdbe0605
+    id: 16
+    len: 12616
+    name: d271e46befcf51c65a9835c5da2b2741.unity3d
+  - deps: 010000000d000000
+    hash: f9920ed8f62a0d41cae8d5077a5e9db5
+    id: 17
+    len: 116769
+    name: dd0fd059de43b8998199ab7b048bca42.unity3d
+  dirs:
+  - Assets/Bundles/Config
+  - Assets/Bundles/Independent
+  - Assets/Bundles/UI
+  - Assets/Bundles/Unit
+  - Assets/Scenes

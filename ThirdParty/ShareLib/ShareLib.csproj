@@ -12,6 +12,10 @@
       <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
 
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+      <DefineConstants>TRACE;NOT_UNITY</DefineConstants>
+    </PropertyGroup>
+
     <ItemGroup>
       <Content Include="..\..\Libs\RecastNavMesh\libRecastNavDll.dylib">
         <Link>libRecastNavDll.dylib</Link>

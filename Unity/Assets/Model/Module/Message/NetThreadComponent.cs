@@ -2,7 +2,9 @@
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Threading;
-
+#if !NOT_UNITY
+using ETCold;
+#endif
 namespace ET
 {
     public class NetThreadComponent: Entity

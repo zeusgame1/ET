@@ -22,6 +22,40 @@
   </PropertyGroup>
   <ItemGroup>
 
+    <Compile Include="..\..\Unity\Assets\Cold\ET\Core\ThreadSynchronizationContext.cs">
+      <Link>Core\%(FileName)%(Extension)</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\Cold\ET\Core\StructBsonSerialize.cs">
+      <Link>Core\%(FileName)%(Extension)</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\Cold\ET\Core\MultiMapSet.cs">
+      <Link>Core\%(FileName)%(Extension)</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\Cold\ET\Core\MultiDictionary.cs">
+      <Link>Core\%(FileName)%(Extension)</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\Cold\ET\Core\MultiMap.cs">
+      <Link>Core\%(FileName)%(Extension)</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\Cold\ET\Core\Helper\RandomHelper.cs">
+      <Link>Core\Helper\%(FileName)%(Extension)</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\Cold\ET\Core\Helper\ByteHelper.cs">
+      <Link>Core\Helper\%(FileName)%(Extension)</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\Cold\ET\Core\Helper\StringHelper.cs">
+      <Link>Core\Helper\%(FileName)%(Extension)</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\Cold\ET\Colletions\**\*.cs">
+      <Link>Core\%(FileName)%(Extension)</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\Cold\ET\Core\Module\**\*.cs">
+      <Link>Module\%(RecursiveDir)%(FileName)%(Extension)</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\Cold\ET\Core\Async\**\*.cs">
+      <Link>Core\Async\%(RecursiveDir)%(FileName)%(Extension)</Link>
+    </Compile>
+
     <Compile Include="..\..\Unity\Assets\Editor\Helper\MongoHelper.cs">
       <Link>Base\MongoHelper.cs</Link>
     </Compile>
@@ -63,7 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\..\Unity\Assets\Model\Module\Message\AMHandler.cs" Link="Module\Message\AMHandler.cs" />
-    <Compile Include="..\..\Unity\Assets\Model\Module\Message\ErrorCode.cs" Link="Module\Message\ErrorCode.cs" />
+    <!--<Compile Include="..\..\Unity\Assets\Model\Module\Message\ErrorCode.cs" Link="Module\Message\ErrorCode.cs" />-->
     <Compile Include="..\..\Unity\Assets\Model\Module\Message\IMessage.cs" Link="Module\Message\IMessage.cs" />
     <Compile Include="..\..\Unity\Assets\Model\Module\Message\IMessageDispatcher.cs" Link="Module\Message\IMessageDispatcher.cs" />
     <Compile Include="..\..\Unity\Assets\Model\Module\Message\IMHandler.cs" Link="Module\Message\IMHandler.cs" />
@@ -71,17 +105,17 @@
     <Compile Include="..\..\Unity\Assets\Model\Module\Message\MessageHandlerAttribute.cs" Link="Module\Message\MessageHandlerAttribute.cs" />
     <Compile Include="..\..\Unity\Assets\Model\Module\Message\OpcodeHelper.cs" Link="Module\Message\OpcodeHelper.cs" />
     <Compile Include="..\..\Unity\Assets\Model\Module\Message\OpcodeTypeComponent.cs" Link="Module\Message\OpcodeTypeComponent.cs" />
-    <Compile Include="..\..\Unity\Assets\Model\Module\Message\RpcException.cs" Link="Module\Message\RpcException.cs" />
+    <!--<Compile Include="..\..\Unity\Assets\Model\Module\Message\RpcException.cs" Link="Module\Message\RpcException.cs" />-->
     <Compile Include="..\..\Unity\Assets\Model\Module\Message\Session.cs" Link="Module\Message\Session.cs" />
-    <Compile Include="..\..\Unity\Assets\Model\Module\NetworkTCP\PacketParser.cs">
+    <!--<Compile Include="..\..\Unity\Assets\Model\Module\NetworkTCP\PacketParser.cs">
       <Link>Module\NetworkTCP\PacketParser.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Unity\Assets\Model\Module\NetworkTCP\TChannel.cs">
+    </Compile>-->
+    <!--<Compile Include="..\..\Unity\Assets\Model\Module\NetworkTCP\TChannel.cs">
       <Link>Module\NetworkTCP\TChannel.cs</Link>
     </Compile>
     <Compile Include="..\..\Unity\Assets\Model\Module\NetworkTCP\TService.cs">
       <Link>Module\NetworkTCP\TService.cs</Link>
-    </Compile>
+    </Compile>-->
     <Compile Include="..\..\Unity\Assets\Model\Module\Numeric\INumericWatcher.cs">
       <Link>Module\Numeric\INumericWatcher.cs</Link>
     </Compile>

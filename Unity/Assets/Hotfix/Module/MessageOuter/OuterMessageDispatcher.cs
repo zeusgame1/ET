@@ -1,6 +1,8 @@
 ﻿using System;
 using System.IO;
-
+#if !NOT_UNITY
+using ETCold;
+#endif
 namespace ET
 {
     public class OuterMessageDispatcher: IMessageDispatcher

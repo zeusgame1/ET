@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 namespace ET
 {
+    [ObjectSystem]
     public class UiLoadingComponentAwakeSystem : AwakeSystem<UILoadingComponent>
     {
         public override void Awake(UILoadingComponent self)
@@ -10,7 +11,7 @@ namespace ET
             self.text = self.GetParent<UI>().GameObject.Get<GameObject>("Text").GetComponent<Text>();
         }
     }
-
+    [ObjectSystem]
     public class UiLoadingComponentStartSystem : StartSystem<UILoadingComponent>
     {
         public override void Start(UILoadingComponent self)

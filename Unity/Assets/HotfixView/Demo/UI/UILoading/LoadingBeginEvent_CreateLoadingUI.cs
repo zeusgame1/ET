@@ -2,6 +2,7 @@
 
 namespace ET
 {
+    [Event]
     public class LoadingBeginEvent_CreateLoadingUI : AEvent<EventType.LoadingBegin>
     {
         protected override async ETTask Run(EventType.LoadingBegin args)

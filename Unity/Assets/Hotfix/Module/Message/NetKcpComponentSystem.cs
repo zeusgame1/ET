@@ -1,7 +1,9 @@
 ﻿using System;
 using System.IO;
 using System.Net;
-
+#if !NOT_UNITY
+using ETCold;
+#endif
 namespace ET
 {
     [ObjectSystem]
@@ -12,8 +14,8 @@ namespace ET
             self.MessageDispatcher = new OuterMessageDispatcher();
             
             self.Service = new TService(NetThreadComponent.Instance.ThreadSynchronizationContext, ServiceType.Outer);
-            self.Service.ErrorCallback += self.OnError;
-            self.Service.ReadCallback += self.OnRead;
+            self.Service.ErrorCallback += (channelId, error) => self.OnError(channelId, error);
+            self.Service.ReadCallback += (channelId, Memory) => self.OnRead(channelId, Memory);
 
             NetThreadComponent.Instance.Add(self.Service);
         }

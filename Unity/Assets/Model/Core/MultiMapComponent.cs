@@ -1,7 +1,9 @@
+#if !NOT_UNITY
+using ETCold;
+#endif
 /**
  * 封装MultiMap，用于重用
  */
-
 namespace ET
 {
     public class MultiMapComponent<T, K>: Entity
