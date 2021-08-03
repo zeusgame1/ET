@@ -136,7 +136,7 @@ namespace ET
                     {
                         continue;
                     }
-                    object[] objects = type.GetCustomAttributes(attType, false);
+                    object[] objects = type.GetCustomAttributes(attType, true);
                     if (objects.Length == 0)
                     {
                         continue;

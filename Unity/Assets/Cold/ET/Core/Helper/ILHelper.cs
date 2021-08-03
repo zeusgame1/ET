@@ -87,7 +87,11 @@ namespace ETCold
             appdomain.DelegateManager.RegisterMethodDelegate<long, MemoryStream>();
             appdomain.DelegateManager.RegisterMethodDelegate<long, IPEndPoint>();
 
-            appdomain.DelegateManager.RegisterMethodDelegate<libx.AssetRequest>();
+            appdomain.DelegateManager.RegisterMethodDelegate<libx.AssetRequest>();
+			
+			appdomain.DelegateManager.RegisterMethodDelegate<System.String, System.String, System.Type, FairyGUI.PackageItem>();
+            appdomain.DelegateManager.RegisterMethodDelegate<FairyGUI.GObject>();
+
         }
         ///带返回委托适配
 
@@ -125,6 +129,29 @@ namespace ETCold
                     return ((Func<KeyValuePair<int, int>, KeyValuePair<int, int>, int>)act)(x, y);
                 });
             });
+			appdomain.DelegateManager.RegisterDelegateConvertor<FairyGUI.UIPackage.LoadResourceAsync>((act) =>
+{
+    return new FairyGUI.UIPackage.LoadResourceAsync((name, extension, type, item) =>
+    {
+        ((Action<System.String, System.String, System.Type, FairyGUI.PackageItem>)act)(name, extension, type, item);
+    });
+});
+
+appdomain.DelegateManager.RegisterDelegateConvertor<FairyGUI.UIPackage.CreateObjectCallback>((act) =>
+{
+    return new FairyGUI.UIPackage.CreateObjectCallback((result) =>
+    {
+        ((Action<FairyGUI.GObject>)act)(result);
+    });
+});
+appdomain.DelegateManager.RegisterDelegateConvertor<FairyGUI.EventCallback0>((act) =>
+{
+    return new FairyGUI.EventCallback0(() =>
+    {
+        ((Action)act)();
+    });
+});
+
         }
 
 
