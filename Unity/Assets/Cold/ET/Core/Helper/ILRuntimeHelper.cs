@@ -37,11 +37,11 @@ namespace ETCold
 
             foreach (var item in loadDic)
             {
-                if (HotfixHelper.SkipDlls.Contains(item.Key))
-                {
-                    continue;
-                }
-              
+                //if (HotfixHelper.SkipDlls.Contains(item.Key))
+                //{
+                //    continue;
+                //}
+
                 byte[] assBytes = LoadHelper.LoadCode(item.Key).bytes;
                 byte[] pdbBytes = LoadHelper.LoadCode(item.Value).bytes;
                 var assStream = new MemoryStream(assBytes);

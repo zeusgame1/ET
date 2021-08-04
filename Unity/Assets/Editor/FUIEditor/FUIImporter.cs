@@ -13,7 +13,7 @@ namespace ETEditor
         static string FUI_Res_Dir => System.IO.Path.Combine(FUI_Dir, "Codes");
 
 
-        [MenuItem("Tools/FUI/导入fui代码"),]
+        [MenuItem("Tools/FUI/导入fui代码")]
         public static void ImportCodes()
         {
             ET.Log.Debug("=========开始导入fui代码，请耐心等待=========");

@@ -46,7 +46,7 @@ namespace ETCold
             return Define.IsILRuntime ? ILRuntimeHelper.Types : MonoHelper.Types;
         }
 
-        public static  List<string> SkipDlls;
+        public static  List<string> SkipDlls = new List<string>();
 
     }
 }

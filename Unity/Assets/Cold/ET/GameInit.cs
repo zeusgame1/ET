@@ -12,10 +12,10 @@ namespace ETCold
         /// <summary>
         /// 需要跳过的DLL
         /// </summary>
-        public string[] SkipDlls;
+        public string[] SkipDlls = new string[0];
         void Awake()
         {
-         
+            
 
 
             SynchronizationContext.SetSynchronizationContext(ThreadSynchronizationContext.Instance);

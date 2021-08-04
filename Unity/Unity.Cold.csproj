@@ -64,7 +64,6 @@
     <Compile Include="Assets\Cold\FUI\Core\Text\TypingEffect.cs" />
     <Compile Include="Assets\Cold\ILBinding\UnityEngine_Events_UnityEvent_Binding.cs" />
     <Compile Include="Assets\Cold\FUI\UI\GSlider.cs" />
-    <Compile Include="Assets\Cold\ILBinding\System_Collections_Generic_Dictionary_2_Type_List_1_ILTypeInstance_Binding_Enu.cs" />
     <Compile Include="Assets\Cold\ILBinding\UnityEngine_TextAsset_Binding.cs" />
     <Compile Include="Assets\Cold\ILBinding\UnityEngine_Animator_Binding.cs" />
     <Compile Include="Assets\Cold\ILBinding\System_Collections_Generic_Queue_1_Dictionary_2_Int64_ILTypeInstance_Binding.cs" />
@@ -73,7 +72,6 @@
     <Compile Include="Assets\Cold\FUI\UI\UIContentScaler.cs" />
     <Compile Include="Assets\Cold\FUI\Core\HitTest\ShapeHitTest.cs" />
     <Compile Include="Assets\Cold\XAsset\Core\Reference.cs" />
-    <Compile Include="Assets\Cold\ILBinding\System_Collections_Generic_KeyValuePair_2_Type_HashSet_1_Type_Binding.cs" />
     <Compile Include="Assets\Cold\ILBinding\System_Math_Binding.cs" />
     <Compile Include="Assets\Cold\ET\Core\Helper\HotfixHelper.cs" />
     <Compile Include="Assets\Cold\ILBinding\System_Diagnostics_Process_Binding.cs" />
@@ -124,7 +122,6 @@
     <Compile Include="Assets\Cold\ILBinding\System_Diagnostics_StackTrace_Binding.cs" />
     <Compile Include="Assets\Cold\FUI\Core\GoWrapper.cs" />
     <Compile Include="Assets\Cold\FUI\Core\Text\InputTextField.cs" />
-    <Compile Include="Assets\Cold\ILBinding\System_Collections_Generic_Dictionary_2_Type_HashSet_1_Type_Binding.cs" />
     <Compile Include="Assets\Cold\ILBinding\System_Collections_Generic_Dictionary_2_Int32_Transform_Binding.cs" />
     <Compile Include="Assets\Cold\ILBinding\System_Collections_Generic_List_1_UnityWebRequest_Binding.cs" />
     <Compile Include="Assets\Cold\ILBinding\System_Text_StringBuilder_Binding.cs" />
@@ -223,7 +220,6 @@
     <Compile Include="Assets\Cold\FUI\UI\Tree\TreeView.cs" />
     <Compile Include="Assets\Cold\ILBinding\System_Type_Binding.cs" />
     <Compile Include="Assets\Cold\ET\Core\Async\AsyncMethodBuilderAttribute.cs" />
-    <Compile Include="Assets\Cold\ILBinding\System_Collections_Generic_KeyValuePair_2_Type_List_1_ILTypeInstance_Binding.cs" />
     <Compile Include="Assets\Cold\ILBinding\System_Collections_Generic_Dictionary_2_String_Assembly_Binding_ValueCollectio.cs" />
     <Compile Include="Assets\Cold\FUI\UI\UIObjectFactory.cs" />
     <Compile Include="Assets\Cold\ET\Core\MultiDictionary.cs" />
@@ -266,7 +262,6 @@
     <Compile Include="Assets\Cold\ILBinding\UnityEngine_AnimationClip_Binding.cs" />
     <Compile Include="Assets\Cold\ILBinding\ICSharpCode_SharpZipLib_Zip_Compression_Inflater_Binding.cs" />
     <Compile Include="Assets\Cold\FUI\Filter\IFilter.cs" />
-    <Compile Include="Assets\Cold\ILBinding\System_Collections_Generic_Queue_1_HashSet_1_Type_Binding.cs" />
     <Compile Include="Assets\Cold\ILBinding\ET_ETAsyncTaskMethodBuilder_Binding.cs" />
     <Compile Include="Assets\Cold\ILBinding\System_Threading_Monitor_Binding.cs" />
     <Compile Include="Assets\Cold\ILBinding\System_Collections_IEnumerator_Binding.cs" />
@@ -312,11 +307,9 @@
     <Compile Include="Assets\Cold\ILBinding\System_Collections_Generic_Dictionary_2_String_Byte_Array_Binding.cs" />
     <Compile Include="Assets\Cold\FUI\Core\Text\TextFormat.cs" />
     <Compile Include="Assets\Cold\FUI\Core\Text\BitmapFont.cs" />
-    <Compile Include="Assets\Cold\ILBinding\System_Collections_Generic_Queue_1_List_1_ILTypeInstance_Binding.cs" />
     <Compile Include="Assets\Cold\FUI\UI\Gears\IAnimationGear.cs" />
     <Compile Include="Assets\Cold\ILBinding\System_Collections_Generic_Dictionary_2_String_AnimationClip_Binding.cs" />
     <Compile Include="Assets\Cold\ET\Colletions\UnOrderMultiMap.cs" />
-    <Compile Include="Assets\Cold\ILBinding\System_Collections_Generic_Dictionary_2_Type_HashSet_1_Type_Binding_Enumerator.cs" />
     <Compile Include="Assets\Cold\XAsset\Core\Assets.cs" />
     <Compile Include="Assets\Cold\FUI\UI\GComboBox.cs" />
     <Compile Include="Assets\Cold\ILBinding\ProtoBuf_Serializer_Binding.cs" />
@@ -502,6 +495,22 @@
     <Compile Include="Assets\Cold\ILBinding\System_Collections_Generic_Dictionary_2_Type_ILTypeInstance_Binding.cs" />
     <Compile Include="Assets\Cold\ET\Core\Module\Network\AChannel.cs" />
     <Compile Include="Assets\Cold\ILBinding\ETCold_GameLoop_Binding.cs" />
+    <Compile Include="Assets\Cold\ILBinding\UnityEngine_Screen_Binding.cs" />
+    <Compile Include="Assets\Cold\ILBinding\FairyGUI_EventListener_Binding.cs" />
+    <Compile Include="Assets\Cold\ILBinding\FairyGUI_UIPackage_Binding.cs" />
+    <Compile Include="Assets\Cold\ILBinding\ET_ETTask_1_TextAsset_Binding.cs" />
+    <Compile Include="Assets\Cold\ILBinding\FairyGUI_GComponent_Binding.cs" />
+    <Compile Include="Assets\Cold\ILBinding\FairyGUI_DisplayObject_Binding.cs" />
+    <Compile Include="Assets\Cold\ILBinding\FairyGUI_GObject_Binding.cs" />
+    <Compile Include="Assets\Cold\ILBinding\FairyGUI_GRoot_Binding.cs" />
+    <Compile Include="Assets\Cold\ILBinding\ET_UnOrderMultiMapSet_2_Type_Type_Binding.cs" />
+    <Compile Include="Assets\Cold\ILBinding\System_Collections_Generic_Dictionary_2_String_UIPackage_Binding.cs" />
+    <Compile Include="Assets\Cold\ILBinding\System_Collections_Generic_Stack_1_ILTypeInstance_Binding.cs" />
+    <Compile Include="Assets\Cold\ILBinding\UnityEngine_Rect_Binding.cs" />
+    <Compile Include="Assets\Cold\ILBinding\ET_ETTask_1_Texture_Binding.cs" />
+    <Compile Include="Assets\Cold\ILBinding\FairyGUI_PackageItem_Binding.cs" />
+    <Compile Include="Assets\Cold\ILBinding\System_Collections_Generic_Dictionary_2_GObject_ILTypeInstance_Binding.cs" />
+    <Compile Include="Assets\Cold\ILBinding\ET_UnOrderMultiMap_2_Type_ILTypeInstance_Binding.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Cold\Unity.Cold.asmdef" />
