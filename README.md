@@ -12,9 +12,9 @@
 
 
 ## 使用说明
-由于ILRT不支持多DLL调试，  
-请在GameInit monobehavior中勾选ForceMono以Mono模式进行调试
-
+GameInit 里勾选IsILRuntime启用ilrt热更，
+取消勾选则是mono模式。
+由于ilrt不支持多个DLL调试，请在mono模式下进行调试。
 
 ## Other
 ①基本保留了原本6.0的文件结构  
