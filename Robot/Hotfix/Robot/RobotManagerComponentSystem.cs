@@ -3,12 +3,12 @@ using System.Linq;
 
 namespace ET
 {
-    public class RobotManagerComponentAwakeSystem: AwakeSystem<RobotManagerComponent>
-    {
-        public override void Awake(RobotManagerComponent self)
-        {
-        }
-    }
+    // public class RobotManagerComponentAwakeSystem: AwakeSystem<RobotManagerComponent>
+    // {
+        // public override void Awake(RobotManagerComponent self)
+        // {
+        // }
+    // }
 
     public static class RobotManagerComponentSystem
     {
